@@ -1,0 +1,128 @@
+/*--
+Remember the cascade: 
+ 1. later styles override earlier ones 
+ 2. more specific styles override more general ones
+--*/
+html {
+	font-size: 62.5%;
+}
+img {
+	width: 100%;
+	height: auto
+}
+body {
+  color: #444;
+  font-size: 1.6rem;
+  font-family: 'Gentium Book Basic', serif;
+  background-color: rgb(255, 255, 240);
+}
+p {
+  margin-bottom: .67em;
+}
+/*--added in classc--*/
+
+body {
+  background: var(--background);
+  background-image: url("images/brand.png"); /*-- N.B. the ../ in the file/path --*/
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  padding: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav, footer {
+  background-color: rgb(25, 94, 36);
+}
+footer {
+  text-align: center;
+  padding: 1em 0 .3em 0;
+  color: #818181;
+}
+/*-- Main Menu Styles
+nav ul {
+  list-style: none;
+  padding: 1em;
+}
+nav a:link, nav a:visited {
+  color: #818181;
+  text-decoration: none;
+}
+nav a:hover, nav a:active  {
+  color: #818181;
+  text-decoration: underline;
+}
+nav a.active {
+  color: #818181;
+}
+/*-- Hero Unit Styles--*/
+header {
+  width: 510px;
+  margin: 2em auto;
+}
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.small {
+  margin-top: 1em;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  font-variant-caps: all-small-caps;
+}
+/*-- Article Styles--*/
+article {
+  width: 768px;
+  font-size: 18px;
+  line-height: 1.3;
+  margin: auto;
+}
+article figure {
+  width: 39%;
+  margin: 0 0 1.25em 1.25em;
+  float: right;
+}
+article figcaption {
+  font-size: smaller;
+  font-weight: 100;
+  font-family: 'WebDings', sans-serif;
+  /*-- font-family: 'Arial', sans-serif; --*/
+}
+.pagination {
+  margin: 2em auto;
+  margin: row;
+  display: flex;
+  justify-content: space-evenly;
+  width: 96%;
+}
+a.button {
+  border: 2px solid #818181;
+  padding: .4em 1em .4em 1em;
+  text-decoration: none;
+  color: #818181;
+  border-radius: 200px;
+  border-width: 3px;
+  border-color: #818181;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+}
+a.button:hover, a.button:active {
+  border: 3px solid rgb(25, 94, 36);
+  text-decoration: none;
+  color: rgb(25, 94, 36);
+}
+/*-- changes header and article width on small screens --*/
+@media screen and (max-width: 768px) {
+  header {width: 96%;}
+  article {width: 96%;}
+}
