@@ -14,7 +14,7 @@ body {
   color: #444;
   font-size: 1.6rem;
   font-family: 'Gentium Book Basic', serif;
-  background-color: rgb(255, 255, 240);
+  background-color: rgb(73, 70, 70);
 }
 p {
   margin-bottom: .67em;
@@ -23,9 +23,20 @@ p {
 
 body {
   background: var(--background);
-  background-image: url("images/brand.png"); /*-- N.B. the ../ in the file/path --*/
+  background-image: url("../images/leather_3.jpg"); /*-- N.B. the ../ in the file/path --*/
+  background-size: 30%;
+  /*--background-color: rgb(100, 100, 104);--*/
+	height: auto
 }
 
+/*--How to blur the repeating image as the background?--*/
+/*----*/
+
+/*--Trying to get the whole page (except header and background) into one box, doesn't work --*/
+/*--.box {
+  width: 80% !important;
+  background-color: aquamarine !important;
+}--*/
 
 nav ul {
   display: flex;
@@ -37,7 +48,7 @@ nav ul {
   margin-bottom: 0;
 }
 nav, footer {
-  background-color: rgb(25, 94, 36);
+  background-color: rgb(153, 59, 59);
 }
 footer {
   text-align: center;
@@ -62,11 +73,14 @@ nav a.active {
 }
 /*-- Hero Unit Styles--*/
 header {
-  width: 510px;
-  margin: 2em auto;
+  width: 1fr;
+  margin: 1em auto;
+  color:rgb(153, 10, 10);
 }
+
 header img {
-  width: 100%;
+  width: 25%;
+  padding: 0;
   margin: 0 auto;
 }
 header h1 {
@@ -74,27 +88,37 @@ header h1 {
   padding: 0 auto;
 }
 .small {
-  margin-top: 1em;
+  margin-top: 0.05em;
   font-weight: 900;
-  font-family: 'Lato', sans-serif;
+  font-family: 'BebasNeue', sans-serif;
   font-variant-caps: all-small-caps;
+  font-size: 500%;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  background-color: rgb(66, 62, 61);
+}
+
 /*-- Article Styles--*/
 article {
-  width: 768px;
+  width: 50%;
   font-size: 18px;
   line-height: 1.3;
   margin: auto;
+  background: rgb(119, 117, 117);
 }
-article figure {
-  width: 39%;
+article figure { /*-- Article Image--*/
+  width: 25%;
   margin: 0 0 1.25em 1.25em;
   float: right;
+  margin: 1em;
 }
 article figcaption {
   font-size: smaller;
   font-weight: 100;
-  font-family: 'WebDings', sans-serif;
+  font-family: 'Lato', sans-serif;
   /*-- font-family: 'Arial', sans-serif; --*/
 }
 .pagination {
@@ -117,9 +141,9 @@ a.button {
   font-size: 80%;
 }
 a.button:hover, a.button:active {
-  border: 3px solid rgb(25, 94, 36);
+  border: 3px solid rgb(129, 214, 143);
   text-decoration: none;
-  color: rgb(25, 94, 36);
+  color: rgb(143, 54, 54);
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
