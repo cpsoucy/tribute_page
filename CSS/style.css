@@ -51,6 +51,11 @@ nav ul {
   margin-bottom: 0;
   background-image: url("../images/leather_3.jpg"); /*-- N.B. the ../ in the file/path --*/
   background-size: 35%;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  background-color: rgb(66, 62, 61);
+
 }
 nav, footer {
   background-color: rgb(153, 59, 59);
@@ -83,10 +88,25 @@ header {
   width: 1fr;
   /*--margin: 1em auto;--*/
   color:rgb(153, 10, 10);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  
 }
-
+.small {
+  margin: 0;
+  margin-left: 100fr;
+  font-weight: 900;
+  font-family: 'BebasNeue', sans-serif;
+  font-variant-caps: all-small-caps;
+  font-size: 200%;
+  position: relative;
+  left: 10em;
+  transform: scale(2, 5);
+  color:rgb(153, 10, 10);
+} 
 header img {
-  width: 25%;
+  width: 20%;
   padding: 0;
   margin: 0 auto;
 }
@@ -94,21 +114,7 @@ header h1 {
   margin: 0 auto;
   padding: 0 auto;
 }
-.small {
-  margin-top: 0.05em;
-  font-weight: 900;
-  font-family: 'BebasNeue', sans-serif;
-  font-variant-caps: all-small-caps;
-  font-size: 500%;
-} 
 
-/*-- Can't get grid to work; --*/
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto;
-  background-color: rgb(66, 62, 61);
-}
 
 /*-- Article Styles--*/
 article {
