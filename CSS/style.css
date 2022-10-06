@@ -1,8 +1,3 @@
-/*--
-Remember the cascade: 
- 1. later styles override earlier ones 
- 2. more specific styles override more general ones
---*/
 html {
 	font-size: 62.5%;
 }
@@ -17,17 +12,25 @@ body {
   background-color: rgb(73, 70, 70);
 }
 p {
-  margin-bottom: .67em;
+  /*--margin-bottom: .67em;--*/
 }
 /*--added in classc--*/
 
 body {
+  background: rgb(119, 117, 117);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*--body {
   background: var(--background);
   background-image: url("../images/leather_3.jpg"); /*-- N.B. the ../ in the file/path --*/
-  background-size: 30%;
+  /*--background-size: 30%;--*/
   /*--background-color: rgb(100, 100, 104);--*/
-	height: auto
-}
+	/*--height: auto
+/*--}--*/
 
 /*--How to blur the repeating image as the background?--*/
 /*----*/
@@ -46,6 +49,8 @@ nav ul {
   padding: 1em;
   margin-top: 0;
   margin-bottom: 0;
+  background-image: url("../images/leather_3.jpg"); /*-- N.B. the ../ in the file/path --*/
+  background-size: 35%;
 }
 nav, footer {
   background-color: rgb(153, 59, 59);
@@ -53,9 +58,11 @@ nav, footer {
 footer {
   text-align: center;
   padding: 1em 0 .3em 0;
-  color: #818181;
+  background-image: url("../images/leather_3.jpg"); /*-- N.B. the ../ in the file/path --*/
+  background-size: 35%;
+  /*--color: #818181;--*/
 }
-/*-- Main Menu Styles
+ /*--Main Menu Styles--*/
 nav ul {
   list-style: none;
   padding: 1em;
@@ -74,7 +81,7 @@ nav a.active {
 /*-- Hero Unit Styles--*/
 header {
   width: 1fr;
-  margin: 1em auto;
+  /*--margin: 1em auto;--*/
   color:rgb(153, 10, 10);
 }
 
@@ -93,7 +100,9 @@ header h1 {
   font-family: 'BebasNeue', sans-serif;
   font-variant-caps: all-small-caps;
   font-size: 500%;
-}
+} 
+
+/*-- Can't get grid to work; --*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
