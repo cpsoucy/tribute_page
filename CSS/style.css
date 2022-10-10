@@ -3,7 +3,7 @@ html {
 }
 img {
 	width: 100%;
-	height: auto
+	height: auto; /*-- added a closing semi-colon here, this was the problem. --*/
 }
 body {
   color: #444;
