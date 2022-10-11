@@ -6,45 +6,30 @@ img {
 	width: 100%;
 	height: auto
 }
-body {
-  color: #444;
-  font-size: 1.6rem;
-  font-family: 'Gentium Book Basic', serif;
-  background-color: rgb(73, 70, 70);
-}
 
 body {
-  background: rgb(119, 117, 117);
+  color: #444;
+  background-color: rgb(73, 70, 70);
+  font-size: 1.6rem;
+  font-family: 'Gentium Book Basic', serif;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
 }
 
-nav ul {
-  flex-direction: row;
-  flex-basis: auto;
-  padding: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 nav, footer {
   background-image: url("../images/leather_3.jpg"); /*-- N.B. the ../ in the file/path --*/
   background-size: 35%;
 }
-nav, footer {
-  background-color: rgb(153, 59, 59);
-}
+
 footer {
   text-align: center;
-  padding: 1em 0 .3em 0;
+  padding: 1em;
+  margin-bottom: 0;
 }
  /*--Main Menu Styles--*/
-nav ul {
-  list-style: none;
-  padding: 1em;
-}
+
 nav a:link, nav a:visited {
   color: #818181;
   text-decoration: none;
@@ -57,23 +42,24 @@ nav a.active {
   color: #818181;
 }
 /*-- Hero Unit Styles--*/
-header {
-  width: 1fr;
-  /*--margin: 1em auto;--*/
-  color:rgb(153, 10, 10);
-}
 
 header img {
-  width: 25%;
+  width: 75%;
   padding: 0;
   margin: 0 auto;
 }
 
+.anchors {
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2.5em;
+  justify-content: space-between;
+  flex: auto;
+}
+
 .small {
-  position: absolute;
-  width: 25%;
-  margin: 0;
-  padding: 0;
+  width: 110%;
   font-weight: 900;
   font-family: 'BebasNeue', sans-serif;
   font-variant-caps: all-small-caps;
@@ -82,7 +68,6 @@ header img {
   transform: scale(2.75, 5);
   letter-spacing: -0.25rem;
   /*--color:rgb(153, 10, 10);--*/
-
   background-image: linear-gradient( 
 		rgb(150, 45, 45) 10%,
 		rgb(75, 12, 12) 60%);
@@ -92,13 +77,11 @@ header img {
 
 header {
   width: 1fr;
-  margin: 5%;
   padding: 5%;
   display: flex;
   flex: 1 0.5 auto;
   flex-direction: row;
 }
-
 
 /*-- Article Styles--*/
 article {
