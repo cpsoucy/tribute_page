@@ -161,7 +161,6 @@ header {
 /*-- Unordered list for header nav bar --*/
 ul { 
   list-style-type: none;
-  color:rgb(6, 58, 138);
   display: flex;
   margin-top: 15%;
 }
@@ -262,13 +261,13 @@ transition: 1s ease;
 /*-- For right image and right figcaption --*/
 .figure2 {
   float: right;
-  padding-top: 1rem;
+  padding-top: 1.65rem;
   padding-right: 5%;
 }
 
 /*-- Left image --*/
 .image1 {
-  text-align: wrap;
+
   width: 20rem;
 
   border-radius: 0.5em;
@@ -294,7 +293,7 @@ transition: 1s ease;
 
 /*-- Right image --*/
 .image2 {
-  text-align: wrap;
+
   width: 20rem;
 
   border-radius: 0.5em;
