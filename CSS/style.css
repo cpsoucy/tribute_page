@@ -267,9 +267,7 @@ transition: 1s ease;
 
 /*-- Left image --*/
 .image1 {
-
   width: 20rem;
-
   border-radius: 0.5em;
   display: flex;
 
@@ -293,9 +291,7 @@ transition: 1s ease;
 
 /*-- Right image --*/
 .image2 {
-
   width: 20rem;
-
   border-radius: 0.5em;
   transition: 1s ease;
 }
