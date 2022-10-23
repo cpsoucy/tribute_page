@@ -1,28 +1,23 @@
 /*-- 
-Checklist before submission:
-  1. Add text so it looks like website with information
-  2. Good color and typography
-  3. Make sure everything is spaced properly
-
 For future (when expanding this page is my final exam):
   1. Fix header spacing
   2. Fix header spacing as you shrink the page down
   3. Put Guts/Berserk description first, before Miura paragraph
-  4. Have header shrink as title image grows on hover? Is this possible?
   4. Change border on header, add border-top (Make thicker/thinner?), change border different color?
-  5. Is there a way to shift the figcaption text down as the image grows larger on mouse hover for left image and right image?
-  6. Create modal image for top image (when hovering over top image, it grows and background dims), or something similar
-  7. Add grayscale (100%) to brand of sacrifice png, put repeating on article box side columns, left & right (optional, keep only if it looks good)
-  8. Get website title to look more shiny/metallic (If possible, ask York, show Berserk volume as reference)
-  9. Change fonts? Change text color/spacing?
-  9. Space header nav buttons apart farther?
-  10. Polish header nav buttons? How to make look cleaner? Ask prof. York?
-  11. Space lower buttons apart farther
-  12. Polish lower set of buttons to look nicer 
-  13. Add section for Mori? Below Miura
-  14. Expand website? Add more text, images, effects, etc.
-  15. Use javascript for more effects?
-  16. Encorporate gifs into website? (If I can find some good ones)
+  5. Have header shrink as title image grows on hover? Is this possible?
+  6. Is there a way to shift the figcaption text down as the image grows larger on mouse hover for left image and right image?
+  7. Create modal image for top image (when hovering over top image, it grows and background dims), or something similar
+  8. Add grayscale (100%) to brand of sacrifice png, put repeating on article box side columns, left & right (optional, keep only if it looks good)
+  9. Get website title to look more shiny/metallic (If possible, ask York, show Berserk volume as reference)
+  10. Change fonts? Change text color/spacing?
+  11. Space header nav buttons apart farther?
+  12. Polish header nav buttons? How to make look cleaner? Ask prof. York?
+  13. Space lower buttons apart farther
+  14. Polish lower set of buttons to look nicer 
+  15. Add section for Mori? Below Miura
+  16. Expand website? Add more text, images, effects, etc.
+  17. Use javascript for more effects?
+  18. Encorporate gifs into website? (If I can find some good ones)
 --*/
 
 html {
